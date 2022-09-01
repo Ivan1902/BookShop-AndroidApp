@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/perce"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Knjizara Perce"
+        android:textColor="#F10808"
+        android:textSize="40dp"></TextView>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <TableRow android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Korisnicko ime:"
+                android:textStyle="bold"
+                android:textColor="@color/black"></TextView>
+
+            <EditText
+                android:id="@+id/kor_ime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="#D1D0D0"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@color/white"
+                android:visibility="visible"></EditText>
+        </TableRow>
+        <TableRow android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Lozinka:"
+                android:textStyle="bold"
+                android:textColor="@color/black"></TextView>
+
+            <EditText
+                android:id="@+id/lozinka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="#D1D0D0"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:minHeight="30dp"></EditText>
+        </TableRow>
+        <TableRow android:gravity="center"
+            android:layout_marginTop="30px">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="prijavaNaSistem"
+                android:text="Prijavite se"></Button>
+        </TableRow>
+
+        <TextView
+            android:id="@+id/poruka"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#ED0909"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"></TextView>
+
+    </TableLayout>
+
+
+
+</LinearLayout>

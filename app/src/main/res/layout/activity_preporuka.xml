@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/pozadina"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Preporuka"
+        android:textColor="#F10808"
+        android:textSize="40dp"
+        android:id="@+id/preporukaLabel"></TextView>
+
+    <TextView
+        android:id="@+id/imePrezimeLabel"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="Ime i prezime"
+        android:textColor="@color/black"
+        android:background="@drawable/my_border"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"></TextView>
+
+    <TextView
+        android:id="@+id/korisnickoImeLabel"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:layout_toRightOf="@+id/imePrezimeLabel"
+        android:gravity="center"
+        android:text="Korisnicko ime"
+        android:textColor="@color/black"
+        android:background="@drawable/my_border"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="2dp"></TextView>
+
+    <ListView
+        android:id="@+id/preporukaListaKorisnika"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:nestedScrollingEnabled="true"
+        android:layout_marginTop="130dp"></ListView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preporuci odabranim korisnicima"
+            android:gravity="center"
+            android:layout_below="@+id/preporukaListaKorisnika"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:onClick="preporuciOdabranim"
+            android:id="@+id/preporukaDugme"></Button>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/preporukaPoruka"
+            android:layout_below="@+id/preporukaDugme"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#ED0909"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"></TextView>
+
+</RelativeLayout>
+
+

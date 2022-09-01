@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Dostupne knjige"
+        android:id="@+id/dostupneKnjigeItem"></item>
+    <item android:title="Knjige na promociji"
+        android:id="@+id/knjigeNaPromocijiItem"></item>
+    <item android:title="Preporucene knjige"
+        android:id="@+id/preporuceneKnjigeItem"></item>
+    <item android:title="Izmena licnih podataka"
+        android:id="@+id/izmenaLicnihPodatakaItem"></item>
+    <item android:title="Izmena lozinke"
+        android:id="@+id/izmenaLozinkeItem"></item>
+    <item android:title="Odjava"
+        android:id="@+id/odjavaItem"></item>
+</menu>

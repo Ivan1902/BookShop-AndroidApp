@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<TableLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@drawable/pozadina"
+    android:orientation="vertical"
+    android:layout_weight="0">
+    <TableRow android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Detalji knjige"
+            android:textColor="#F10808"
+            android:textSize="40dp"></TextView>
+    </TableRow>
+    <TableRow>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="200dp"
+                android:id="@+id/DetaljiKnjigeSlika"
+                android:src="@drawable/ana_karenjina" />
+
+            <LinearLayout
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@+id/DetaljiKnjigeSlika"
+                android:background="#BAB8B8"
+                android:textColor="@color/black">
+
+                <TextView
+                    android:id="@+id/DetaljiKnjigeOpis"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="5dp"
+                    android:text="Ana karenjina"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:textColor="@color/black"></TextView>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </TableRow>
+    <TableRow >
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#BAB8B8"
+            android:layout_marginTop = "10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Naziv: "
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="center"></TextView>
+
+                <TextView
+                    android:id="@+id/detaljiKnjigeNaziv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ana karenjina "
+                    android:textColor="@color/black"
+                    android:textStyle="bold|italic"
+                    android:gravity="center"></TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Autor: "
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="center"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ana karenjina "
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/black"
+                    android:id="@+id/detaljiKnjigeAutor"
+                    android:gravity="center"></TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Godina izdanja:  "
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="center"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ana karenjina "
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/black"
+                    android:id="@+id/detaljiKnjigeGodina"
+                    android:gravity="center"></TextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Broj strana: "
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="center"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ana karenjina "
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/black"
+                    android:id="@+id/detaljiKnjigeStrane"
+                    android:gravity="center"></TextView>
+            </TableRow>
+
+        </TableLayout>
+    </TableRow>
+    <TableRow android:layout_margin="10dp">
+        <RelativeLayout android:gravity="center">
+
+            <EditText
+                android:id="@+id/detaljiKnjigeOcena"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:height="35dp"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                android:hint="Ocena"></EditText>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:layout_toRightOf="@+id/detaljiKnjigeOcena"
+                android:onClick="unesiOcenu"
+                android:text="Unesi ocenu"></Button>
+        </RelativeLayout>
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:id="@+id/detaljiKnjigeOcenaPoruka"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#ED0909"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"></TextView>
+    </TableRow>
+    <TableRow android:layout_margin="10dp">
+        <LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@android:color/darker_gray"
+                android:hint="Komentar o knjizi"
+                android:gravity="top"
+                android:id="@+id/detaljiKnjigeKomentar"></EditText>
+        </LinearLayout>
+    </TableRow>
+    <TableRow android:layout_marginLeft="10dp"
+         android:layout_marginTop="0dp">
+        <RelativeLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="unesiKomentar"
+                android:text="Unesi komentar"
+                android:id="@+id/komentarButton"></Button>
+
+            <TextView
+                android:id="@+id/detaljiKnjigeKomentarPoruka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="11dp"
+                android:layout_toRightOf="@id/komentarButton"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#ED0909"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"></TextView>
+
+        </RelativeLayout>
+    </TableRow>
+    <TableRow android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp">
+        <LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="preporuci"
+                android:text="Preporuci knjigu"></Button>
+        </LinearLayout>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_margin="10dp"
+            android:text="Ocene i komentari korisnika"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"></TextView>
+    </TableRow>
+
+</TableLayout>
+
+    <ListView
+        android:id="@+id/detaljiKnjigeListaKomentaraIOcena"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:nestedScrollingEnabled="true"></ListView>
+    </LinearLayout>
+</ScrollView>

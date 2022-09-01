@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/pozadina"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Izmena lozinke"
+        android:textColor="#F10808"
+        android:textSize="40dp"></TextView>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+        <TableRow android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Stara lozinka:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"></TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="10"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                android:id="@+id/izmenaLozinkeStara"
+                android:minHeight="30dp"
+                android:inputType="textPassword"></EditText>
+        </TableRow>
+        <TableRow android:gravity="center">
+            <TextView android:text="Nova lozinka:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"></TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="10"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                android:id="@+id/izmenaLozinkeNova"
+                android:minHeight="30dp"
+                android:inputType="textPassword"></EditText>
+        </TableRow>
+        <TableRow android:gravity="center">
+            <TextView android:text="Nova lozinka(ponovo):"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"></TextView>
+            <EditText android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:layout_margin="5dp"
+                android:background="@android:color/darker_gray"
+                android:gravity="center"
+                android:id="@+id/izmenaLozinkeNovaPonovo"
+                android:minHeight="30dp"
+                android:inputType="textPassword"></EditText>
+        </TableRow>
+
+        <TableRow android:gravity="center"
+            android:layout_marginTop="30px">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Azuriraj lozinku"
+                android:onClick="azurirajLozinku"></Button>
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/izmenaLozinkePoruka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:gravity="center"
+        android:textColor="#ED0909"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"></TextView>
+</LinearLayout>

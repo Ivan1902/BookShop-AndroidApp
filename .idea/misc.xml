@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Nedeljkovic/AndroidStudioProjects/AndroidApp/app/src/main/res/layout/activity_detalji_knjige.xml" value="0.22" />
+        <entry key="..\:/Users/Nedeljkovic/AndroidStudioProjects/AndroidApp/app/src/main/res/layout/activity_dostupne_knjige.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/Nedeljkovic/AndroidStudioProjects/AndroidApp/app/src/main/res/layout/activity_izmena_licnih_podataka.xml" value="0.25" />
+        <entry key="..\:/Users/Nedeljkovic/AndroidStudioProjects/AndroidApp/app/src/main/res/layout/activity_izmena_lozinke.xml" value="0.22" />
+        <entry key="..\:/Users/Nedeljkovic/AndroidStudioProjects/AndroidApp/app/src/main/res/layout/activity_knjige_na_promociji.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/Nedeljkovic/AndroidStudioProjects/AndroidApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Nedeljkovic/AndroidStudioProjects/AndroidApp/app/src/main/res/layout/activity_preporucene_knjige.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/Nedeljkovic/AndroidStudioProjects/AndroidApp/app/src/main/res/layout/activity_preporuka.xml" value="0.21" />
+        <entry key="..\:/Users/Nedeljkovic/AndroidStudioProjects/AndroidApp/app/src/main/res/layout/activity_sve_knjige.xml" value="0.264945652173913" />
+        <entry key="..\:/Users/Nedeljkovic/AndroidStudioProjects/AndroidApp/app/src/main/res/layout/knjiga.xml" value="0.1" />
+        <entry key="..\:/Users/Nedeljkovic/AndroidStudioProjects/AndroidApp/app/src/main/res/layout/korisnik_preporuka.xml" value="0.543640897755611" />
+        <entry key="..\:/Users/Nedeljkovic/AndroidStudioProjects/AndroidApp/app/src/main/res/layout/my_border.xml" value="0.2558876811594203" />
+        <entry key="..\:/Users/Nedeljkovic/AndroidStudioProjects/AndroidApp/app/src/main/res/layout/ocena_komentar.xml" value="0.22" />
+        <entry key="..\:/Users/Nedeljkovic/AndroidStudioProjects/AndroidApp/app/src/main/res/layout/sve_knjige.xml" value="0.264945652173913" />
+        <entry key="..\:/Users/Nedeljkovic/AndroidStudioProjects/AndroidApp/app/src/main/res/menu/menu.xml" value="0.14270833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

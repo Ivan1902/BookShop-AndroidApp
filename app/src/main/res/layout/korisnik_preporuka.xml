@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/imePrezime"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="Petar Petrovic"
+        android:textColor="@color/black"
+        android:background="@drawable/my_border"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"></TextView>
+
+    <TextView
+        android:id="@+id/korisnickoIme"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:layout_toRightOf="@+id/imePrezime"
+        android:gravity="center"
+        android:text="pera"
+        android:textColor="@color/black"
+        android:background="@drawable/my_border"
+        android:layout_marginRight="2dp">
+        android:layout_marginBottom="2dp"
+    </TextView>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toRightOf="@+id/korisnickoIme"
+        android:background="@drawable/my_border"
+        android:gravity="center"
+        android:text="Odaberi"
+        android:layout_marginBottom="2dp"
+        android:id="@+id/odabrano"></CheckBox>
+
+</RelativeLayout>
